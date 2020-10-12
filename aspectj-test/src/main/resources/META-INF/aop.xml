@@ -1,0 +1,10 @@
+<aspectj>
+    <aspects>
+        <aspect name="cn.ifengkou.CalcAspectj"/>
+        <!--<aspect name="cn.ifengkou.controller.ControllerAjollerAj"/>-->
+    </aspects>
+    <weaver options="-verbose -showWeaveInfo -Xset:weaveJavaPackages=true -Xset:weaveJavaxPackages=true">
+        <include within="cn.ifengkou.*"/>
+        <exclude within="org.spring.*"/>
+    </weaver>
+</aspectj>
